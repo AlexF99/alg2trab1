@@ -1,4 +1,3 @@
-#include "stdio.h"
 #include "particiona.h"
 
 /* -------------------------------------------------------------------------- */
@@ -6,9 +5,10 @@
 
 int *quicksort(int v[], int a, int b)
 {
+  int m;
   if (b < a)
     return v;
-  int m = particiona(v, a, b, v[b]);
+  m = particiona(v, a, b, v[b]);
   quicksort(v, a, m - 1);
   quicksort(v, m + 1, b);
 }

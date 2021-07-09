@@ -9,7 +9,8 @@
 int particiona(int v[], int a, int b, int x)
 {
   int m = a - 1;
-  for (int i = a; i < b; i++)
+  int i;
+  for (i = a; i < b; i++)
   {
     if (compara(v[i], x) < 0)
     {

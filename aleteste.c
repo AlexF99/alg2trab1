@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "quicksort.h"
 #include "quicksort-mediana.h"
+#include "quicksort-insercao.h"
 
 void readArray(int *v, int length)
 {
@@ -33,7 +34,7 @@ int main(void)
   printf("escreva um array:\n");
   readArray(vet, n);
 
-  sorted = quicksort_mediana(vet, 0, n - 1);
+  sorted = quicksort_insercao(vet, 0, n - 1, 5);
   printf("ordenado:\n");
   showArray(sorted, n);
 
